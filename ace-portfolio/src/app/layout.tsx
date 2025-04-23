@@ -19,9 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={soloLevel.variable}> 
-      <body className="bg-[#060022] text-white">
+      <body className="bg-[#060022] text-white min-h-screen flex flex-col">
       <Header />
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
       <PrismicPreview repositoryName={repositoryName} />
       <Footer />
       </body>
